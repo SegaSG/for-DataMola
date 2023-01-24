@@ -98,12 +98,13 @@ body {
 
 .menu__list {
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;
+    max-width: 720px;    
     padding: 0;    
 }
 
 .menu__item {
-    margin-right: 40px;
+    width: 65px;
     color: var(--white);
     transition: 0.3s;
 }
@@ -114,4 +115,25 @@ body {
 
 .menu-burger {
     display: none;
-} 
+}
+ 
+.introduction{
+    background-color: var(--gray);
+}
+
+.introduction__inner {
+    display: flex;
+    justify-content: space-between;    
+}
+
+.introduction-name{
+    width: 720px;
+    height: 280px;
+    text-align: center;
+    padding-top: 75px;
+    color: var(--dark-blue);    
+}
+
+.introduction-name__title {
+    align-items: center;
+}
