@@ -37,7 +37,7 @@ html {
 
 body {  
     font-family: 'Oswald', sans-serif;
-    font-weight: 500;    
+    font-weight: 500;
 }
 
 .container {
@@ -68,7 +68,7 @@ body {
 }
 
 .logo-link:hover {
-    transform: rotateY(360deg);
+    transform: rotateY(180deg);
 }
 
 .menu__list-link {
@@ -200,6 +200,7 @@ body {
 
 .about-menu__list-link:hover{
     color: var(--purple);
+    transform: scale(1.2);
 }
 
 .skills {
@@ -249,5 +250,31 @@ progress {
 .skills__content-title,
 .about__contacts-title,
 .skills__languages-item{
+    text-align: center;
+}
+
+footer {
+    background-color: var(--dark-blue);
+}
+
+.footer__inner{
+    height: 100px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    color: var(--white);
+}
+.footer__github-img{
+    background: transparent;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+.footer__github-img:hover{
+    transform: rotateY(180deg);
+}
+.footer__copyright{
+    width: 400px;
+}
+.footer__copyright-text{
     text-align: center;
 }
