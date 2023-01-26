@@ -7,13 +7,13 @@ let index = 0;
 
 const activeSlide = n => {
 	for (let slide of slides){
-		 slide.classList.remove('active');
+		slide.classList.remove('active');
 	};
 	slides[n].classList.add('active');
 };
 const activeDote = n => {
 	for (let dot of dots){
-		 dot.classList.remove('active');
+		dot.classList.remove('active');
 	};
 	dots[n].classList.add('active');
 };
@@ -36,7 +36,7 @@ const nextSlide = () => {
 
 const prevSlide = () => {
 	if (index == 0) {
-		index = slides.length-1;
+		index = slides.length - 1;
 		prepereCurrentSlide(index);
 	}	
 	else{
@@ -45,8 +45,8 @@ const prevSlide = () => {
 	};
 };
 
-dots.forEach((item, indexDot)=>{
-	item.addEventListener('click', ()=> {
+dots.forEach((item, indexDot) => {
+	item.addEventListener('click', () => {
 		index = indexDot;
 		prepereCurrentSlide(index);
 	})

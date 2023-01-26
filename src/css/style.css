@@ -366,3 +366,140 @@ footer {
 .footer__copyright-text{
     text-align: center;
 }
+
+.menu-burger {
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+
+.menu-burger:hover {
+    cursor: pointer;
+}
+.menu-burger:hover > span {
+    background-color: var(--yellow);
+}
+
+.menu-line {
+    width: 40px;
+    height: 2px;
+    background-color: var(--white);
+    display: block;
+    margin: 11px auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-burger.open .menu-line:nth-child(2){
+    opacity: 0;
+}
+
+.menu-burger.open .menu-line:nth-child(1){
+    transform: translateY(13px) rotate(45deg);
+}
+  
+.menu-burger.open .menu-line:nth-child(3){
+    transform: translateY(-13px) rotate(-45deg);
+}
+
+@media (max-width: 768px){
+    body.lock {
+        overflow: hidden;
+    }
+
+    .menu__list.open:after {
+        content: "";
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0px;
+        left: 0;
+        background: var(--purple);
+        z-index: -1;
+        opacity: 0.5;
+    }
+
+    .about__content{
+        max-width: 400px;
+    }
+       
+
+    .menu__list {
+        position: absolute;
+        top: 0;
+        right: -500px;
+        width: 500px;
+        height: 100vh;
+        display: block;
+        padding-top: 100px;
+        background-color: var(--purple);
+        transition: 0.5s;
+        z-index: 3;
+        overflow: auto;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-bottom: 100px;        
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        max-width: 620px;
+    }
+    
+    .menu__list.open {
+        right: 0;
+        top: 0;
+        transition: 0.7s;
+        margin: 0;
+        padding-top: 100px;
+    }
+
+    .menu__item {
+        margin-bottom: 16px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;       
+    }
+
+    .menu__list-link {
+        font-size: 28px;       
+    }
+
+    .menu-burger {
+        display: block;
+        width: 50px;        
+    }
+
+    .menu-burger:hover {
+        display: block;
+        width: 50px;
+    }
+
+    .menu__list-link:after{
+        top: 45px;
+        background-color: var(--dark-blue);
+    }
+
+    .introduction__inner,
+    .about__inner,
+    .skills__inner {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .skills__languages-item{
+        text-align: start;
+    }
+
+}
+@media (max-width: 420px){
+    #slider__wrapper-image {
+        width: 250px;
+        
+    }
+    .about__content{
+        max-width: 300px;
+    }
+}
