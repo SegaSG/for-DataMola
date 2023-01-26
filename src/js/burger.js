@@ -16,5 +16,4 @@ function closeMenu(event) {
         menuList.classList.remove('open');
         document.body.classList.remove('lock');
     }
-
 };

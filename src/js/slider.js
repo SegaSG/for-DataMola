@@ -24,11 +24,11 @@ const prepereCurrentSlide = () => {
 }
 
 const nextSlide = () => {
-	if (index == slides.length-1) {
+	if (index == slides.length - 1) {
 		index = 0;
 		prepereCurrentSlide(index);
-	}	
-	else{
+	}
+	else {
 		index++;
 		prepereCurrentSlide(index);
 	};
@@ -39,7 +39,7 @@ const prevSlide = () => {
 		index = slides.length - 1;
 		prepereCurrentSlide(index);
 	}	
-	else{
+	else {
 		index--;
 		prepereCurrentSlide(index);
 	};
