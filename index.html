@@ -24,7 +24,7 @@
                         <li class="menu__item"><a class="menu__list-link" href="#about-me">About</a></li>
                         <li class="menu__item"><a class="menu__list-link" href="#contact">Contacts</a></li>
                         <li class="menu__item"><a class="menu__list-link" href="#skill">Skills</a></li>
-                        <li class="menu__item"><a class="menu__list-link" href="#experience-me">Projects</a></li>
+                        <li class="menu__item"><a class="menu__list-link" href="#slider">Slider</a></li>
                         <li class="menu__item"><a class="menu__list-link" href="#educ">Education</a></li>
                         <li class="menu__item"><a class="menu__list-link" href="#lang">Languages</a></li>
                     </ul>
@@ -143,6 +143,36 @@
                 </div>
             </div>
         </section>
+        <section class="slider">
+            <div class="container"> 
+                <div class="slider__inner">
+                    <h2 class="slider__content-title" id="slider">Slider</h2>
+                    <div class="slider__wrapper">
+                        <div class="slider__wrapper-slide active">
+                            <img id="slider__wrapper-image" src="./src/assets/img/meme-1.png" alt="meme-img">
+                        </div>
+                        <div class="slider__wrapper-slide">
+                            <img id="slider__wrapper-image" src="./src/assets/img/meme-2.png" alt="meme-img">
+                        </div>
+                        <div class="slider__wrapper-slide">
+                            <img id="slider__wrapper-image" src="./src/assets/img/meme-3.png" alt="meme-img">
+                        </div>
+                        <div class="slider__wrapper-slide">
+                            <img id="slider__wrapper-image" src="./src/assets/img/meme-6.png" alt="meme-img">
+                        </div>
+                        <div id="btn-prev"></div>
+                        <div id="btn-next"></div>
+                    </div>               
+                    <div class="slider__wrapper-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>                
+            </div>
+        </section>
+
     </main>
     <footer class="footer">
         <div class="container">
@@ -162,5 +192,7 @@
             </div>
         </div>
     </footer>
+    <script src="./src/js/burger.js"></script>
+    <script src="./src/js/slider.js"></script>
 </body>
 </html>
